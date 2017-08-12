@@ -1,0 +1,16 @@
+{
+  "autoload": {
+    "psr-4": {
+      "MutationTesting\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MutationTestingTests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "humbug/humbug": "~1.0@dev",
+    "phpunit/phpunit": "^5.7"
+  }
+}
