@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-./vendor/bin/phpunit --coverage-html=build/html-coverage
+./vendor/bin/phpunit --coverage-text

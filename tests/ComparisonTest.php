@@ -25,14 +25,14 @@ class ComparisonTest extends TestCase
     public function test_isGreaterThan()
     {
         self::assertTrue($this->comparison->isGreaterThan(5, 3));
-
-        self::assertFalse($this->comparison->isGreaterThan(7, 8));
+        self::assertFalse($this->comparison->isGreaterThan(4, 4));
+        self::assertTrue($this->comparison->isGreaterThan(PHP_INT_MAX, PHP_INT_MIN));
     }
 
     public function test_isSmallerThan()
     {
         self::assertTrue($this->comparison->isSmallerThan(3, 5));
-
-        self::assertFalse($this->comparison->isSmallerThan(8, 7));
+        self::assertFalse($this->comparison->isSmallerThan(4, 4));
+        self::assertTrue($this->comparison->isSmallerThan(PHP_INT_MIN, PHP_INT_MAX));
     }
 }
