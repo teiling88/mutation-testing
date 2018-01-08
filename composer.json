@@ -11,6 +11,7 @@
   },
   "require-dev": {
     "humbug/humbug": "~1.0@dev",
-    "phpunit/phpunit": "^5.7"
+    "phpunit/phpunit": "^5.7",
+    "infection/infection": "^0.7.0"
   }
 }
